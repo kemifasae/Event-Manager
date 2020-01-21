@@ -1,0 +1,63 @@
+{
+  "name": "event-manager",
+  "version": "1.0.0",
+  "description": "web app that manages activities of an event centre",
+  "main": "index.js",
+  "scripts": {
+    "babel-node": "babel-node --presets=latest",
+    "client": "webpack-dev-server --mode development --devtool inline-source-map --hot",
+    "server": "nodemon --exec npm run babel-node -- ./src/server/server.js",
+    "start": "concurrently \"npm run server\" \"npm run client\"",
+    "start-client": "webpack-dev-server --mode development --devtool inline-source-map --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kemifasae/Event-Manager.git"
+  },
+  "author": "Oluwakemi",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kemifasae/Event-Manager/issues"
+  },
+  "homepage": "https://github.com/kemifasae/Event-Manager#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-eslint": "^8.0.3",
+    "babel-loader": "^7.1.4",
+    "bcrypt": "^1.0.3",
+    "body-parser": "^1.18.2",
+    "bootstrap": "^4.1.1",
+    "clean-webpack-plugin": "^0.1.19",
+    "dotenv": "^4.0.0",
+    "eslint-config-airbnb": "^16.1.0",
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.8.0",
+    "eslint-plugin-jsx-a11y": "^6.0.3",
+    "eslint-plugin-react": "^7.5.1",
+    "express": "^4.16.2",
+    "html-loader": "^0.5.5",
+    "html-webpack-plugin": "^3.2.0",
+    "jsonwebtoken": "^8.1.1",
+    "morgan": "^1.9.0",
+    "mysql": "^2.15.0",
+    "mysql2": "^1.5.1",
+    "nodemon": "^1.17.4",
+    "path": "^0.12.7",
+    "react": "^16.3.2",
+    "react-bootstrap": "^0.32.1",
+    "react-dom": "^16.3.2",
+    "sequelize": "^4.32.2",
+    "sequelize-cli": "^3.2.0",
+    "validatorjs": "^3.14.2",
+    "webpack": "^4.8.1",
+    "webpack-dev-server": "^3.1.4"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "eslint": "^4.13.1",
+    "webpack": "^4.8.1",
+    "webpack-cli": "^2.1.3"
+  }
+}
